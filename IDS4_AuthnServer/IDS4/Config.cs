@@ -120,10 +120,18 @@ namespace IDS4
                   PostLogoutRedirectUris = {"https://localhost:5444/signout-callback-oidc"},
 
                   AllowOfflineAccess = true,
+
+                  SlidingRefreshTokenLifetime = 3600,
+                  RefreshTokenUsage = TokenUsage.ReUse,
+                  RefreshTokenExpiration = TokenExpiration.Sliding,
+                  UpdateAccessTokenClaimsOnRefresh = true,
+
                   AllowedScopes = {"openid", "profile", "weatherapi.read"},
                   RequirePkce = true,
                   RequireConsent = true,
-                  AllowPlainTextPkce = false
+                  AllowPlainTextPkce = false,
+                  //AlwaysIncludeUserClaimsInIdToken = true
+                 
                 },
           };
     }

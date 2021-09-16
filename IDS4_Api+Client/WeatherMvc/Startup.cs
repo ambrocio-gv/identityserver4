@@ -36,18 +36,24 @@ namespace WeatherMvc
                     options.ClientId = Configuration["InteractiveServiceSettings:ClientId"];
                     options.ClientSecret = Configuration["InteractiveServiceSettings:ClientSecret"];
 
+                    
+
                     options.ResponseType = "code";
                     options.UsePkce = true;
                     options.ResponseMode = "query";
+                    
+                    
 
                     options.Scope.Add(Configuration["InteractiveServiceSettings:Scopes:0"]);
                     options.SaveTokens = true;
+                    options.Scope.Add("offline_access");
 
                 });
 
-
+            services.AddHttpClient();
 
             services.Configure<IdentityServerSettings>(Configuration.GetSection("IdentityServerSettings"));
+            services.Configure<InteractiveServiceSettings>(Configuration.GetSection("InteractiveServiceSettings"));
             services.AddSingleton<ITokenService, TokenService>();
         }
 

@@ -39,7 +39,14 @@ namespace IDS4
 
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            
+
+            //temp
+            services.ConfigureApplicationCookie(config => {
+                config.Cookie.Name = "IdentityServer.Cookie";
+                //config.LoginPath = "/Auth/Login";
+            });
+
+
             services.AddIdentityServer()
                 .AddAspNetIdentity<IdentityUser>()
                 .AddConfigurationStore(options =>

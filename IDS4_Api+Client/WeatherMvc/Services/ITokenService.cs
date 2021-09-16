@@ -8,6 +8,11 @@ namespace WeatherMvc.Services
 {
     public interface ITokenService
     {
-        Task<TokenResponse> GetToken(string scope);
+        Task<TokenResponse> GetCCToken(string scope);
+
+        Task<TokenResponse> GetACFToken(string accesstoken);
+
+        Task<TokenResponse> GetRefreshToken(string refreshtoken);
+
     }
 }

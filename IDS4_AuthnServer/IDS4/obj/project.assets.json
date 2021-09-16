@@ -6596,19 +6596,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ABCMNLSOL08\\.nuget\\packages\\": {}
+    "C:\\Users\\ABCMNLSOL08\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desktop\\ABC Repos\\IDS4_AuthnServer\\IDS4\\IDS4.csproj",
+      "projectUniqueName": "D:\\Desktop\\ABC Repos\\IdentityServer4\\IDS4_AuthnServer\\IDS4\\IDS4.csproj",
       "projectName": "IDS4",
-      "projectPath": "D:\\Desktop\\ABC Repos\\IDS4_AuthnServer\\IDS4\\IDS4.csproj",
+      "projectPath": "D:\\Desktop\\ABC Repos\\IdentityServer4\\IDS4_AuthnServer\\IDS4\\IDS4.csproj",
       "packagesPath": "C:\\Users\\ABCMNLSOL08\\.nuget\\packages\\",
-      "outputPath": "D:\\Desktop\\ABC Repos\\IDS4_AuthnServer\\IDS4\\obj\\",
+      "outputPath": "D:\\Desktop\\ABC Repos\\IdentityServer4\\IDS4_AuthnServer\\IDS4\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\ABCMNLSOL08\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6709,7 +6714,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
